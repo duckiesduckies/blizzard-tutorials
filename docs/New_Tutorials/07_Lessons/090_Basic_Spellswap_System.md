@@ -458,7 +458,7 @@ We now have a functional, quick, and simple spell equip/swap system. Well done!
 
 ### Part 6 - Suddenly blizzard's actions are bugged.
 
-Turns out there is a bug in blizzard's "remove ability" action. Our speculation is that it can properly remove ability only if it's the last ability in the ability array (so last added ability). So if we add abilities A, B and C and then we want to replace ability A - we'll need to remove C, then remove B, then remove A, add new A, readd B, readd C. Otherwise stuff breaks and we get strange gliches (like abilities disappearing or having referencing wrong effects).
+Turns out there is a bug in blizzard's "remove ability" action. Our speculation is that it can properly remove ability only if it's the last ability in the ability array (so last added ability). So if we add abilities A, B and C and then we want to replace ability A - we'll need to remove C, then remove B, then remove A, add new A, readd B, readd C. Otherwise stuff breaks and we get strange gliches (like abilities disappearing or referencing wrong effects).
 
 At the time of writing this tutorial (sc2 version 5.0.10.88500) this is not fixed. So we'll need to improve system to work with the bug in mind.
 
